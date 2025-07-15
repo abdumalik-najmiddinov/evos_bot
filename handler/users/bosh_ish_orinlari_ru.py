@@ -4,7 +4,7 @@ from keyboard.default import (glavnye_vakansii_ru, tashkent_menu_ru, andijan_men
                               karshi_menu_ru, kokand_menu_ru, namangan_menu_ru, tashkent_viloyat_menu_ru,
                               fergana_viloyat_menu_ru,
                               shahrisabz_menu_ru, navoiy_menu_ru, urgench_menu_ru, nukus_menu_ru,
-                              samarkand_viloyat_menu_ru, main_menu_ru)
+                              samarkand_viloyat_menu_ru, main_menu_ru, main_menu)
 
 router = Router()
 
