@@ -8,7 +8,7 @@ about_photo = "https://ik.imagekit.io/h4yilyuyg/image_havas.jpg?updatedAt=175248
 photo = "https://ik.imagekit.io/h4yilyuyg/image_ofis.jpg?updatedAt=1752482792446"
 
 # 📍 Филиалы
-@router.message(F.text.in_(["📍 Филиалы", "📍 Fililallar"]))
+@router.message(F.text == "📍 Филиалы")
 async def show_filials(message: types.Message):
     await message.answer_photo(
         photo=about_photo,
