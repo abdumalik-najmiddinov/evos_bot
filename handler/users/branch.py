@@ -22,6 +22,18 @@ async def show_filials(message: types.Message):
         reply_markup=filial_ru()
     )
 
+@router.message(F.text == "📍 Fililallar")
+async def show_filials(message: types.Message):
+    await message.answer_photo(
+        photo=about_photo,
+        caption=(
+            """EVOS - O'zbekistondagi eng yirik fastfud kompaniyasi. Ayni paytda 49 ta chakana savdo shoxobchasi va zamonaviy diversifikatsiyalangan ishlab chiqarish ochiq.
+
+Kompaniya xodimlari birgalikda rivojlanib, kundan -kunga o'sib borayotgan katta oila. EVOS har kuni kengayib bormoqda, bugungi kunda bizda bir yarim mingdan ortiq odam bor. Bizning jamoamizga a'zo bo'ling, EVOS oilasiga xush kelibsiz!"""
+        ),
+        reply_markup=filial_uz()
+    )
+
 # 🏢 Головной офис
 @router.message(F.text.in_(["🏢 Головной офис", "🏢 Bosh ofis"]))
 async def show_main_office(message: types.Message):
