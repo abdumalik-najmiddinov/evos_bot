@@ -1,5 +1,5 @@
 from aiogram import Router, types, F
-from keyboard.default import filial_ru, yaqin_filial_ru, tosheknt_filial_ru
+from keyboard.default import filial_ru, yaqin_filial_ru, tosheknt_filial_ru, filial_uz
 
 router = Router()
 
