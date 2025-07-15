@@ -111,6 +111,22 @@ def filial_ru():
     )
     return rkm
 
+def filial_uz():
+    button = KeyboardButton(text="☕️ Yaqin filiallarni ko'rsatish")
+    button2 = KeyboardButton(text="🏢 Bosh ofis")
+    button3 = KeyboardButton(text="Toshkent sh.")
+    button4 = KeyboardButton(text="⬅️ Ortga")
+
+
+    rkm = ReplyKeyboardMarkup(
+        keyboard=[
+            [button],
+            [button2, button3],
+            [button4]
+        ],
+        resize_keyboard=True
+    )
+    return rkm
 
 # yaqin fillial ru
 def yaqin_filial_ru():
