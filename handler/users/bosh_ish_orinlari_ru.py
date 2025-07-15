@@ -87,3 +87,10 @@ async def show_filials(message: types.Message):
     photo = "https://ik.imagekit.io/h4yilyuyg/photo_2025-07-14_10-06-20.jpg?updatedAt=1752469592749"
     await message.answer_photo(photo=photo,
                                reply_markup=main_menu_ru())
+
+
+@router.message(F.text == "⬅️ Ortga")
+async def show_filials(message: types.Message):
+    photo = "https://ik.imagekit.io/h4yilyuyg/photo_2025-07-14_10-06-20.jpg?updatedAt=1752469592749"
+    await message.answer_photo(photo=photo,
+                               reply_markup=main_menu())
